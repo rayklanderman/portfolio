@@ -1,0 +1,102 @@
+{
+  "header": {
+    "subtitle": "Développeur Logiciel | Ingénieur en Prompt AI | Créatif",
+    "downloadCV": "Télécharger CV"
+  },
+  "profile": {
+    "title": "Profil Professionnel",
+    "description": "En tant que Développeur Logiciel passionné, Ingénieur en Prompt AI et Enthousiaste du Cloud, je m'efforce de concevoir des solutions intelligentes et évolutives qui résolvent des défis concrets. Mon expertise couvre le développement full-stack, l'intégration d'IA et le cloud computing, me permettant de créer des applications à la fois innovantes et impactantes. Motivé par une curiosité insatiable, j'approfondis constamment mes connaissances en déploiement d'IA et en technologies cloud, déterminé à repousser les limites de la technologie. Je suis toujours enthousiaste à l'idée de collaborer sur des projets passionnants ou d'explorer les dernières avancées technologiques—créons ensemble quelque chose d'extraordinaire !"
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "items": {
+      "sauti": {
+        "name": "Sauti ya Wanainchi",
+        "description": "Une plateforme pour l'engagement communautaire et la collecte de feedback"
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "description": "Plateforme de consultation médicale alimentée par l'IA avec intégration Supabase"
+      },
+      "dutch": {
+        "name": "Application d'Apprentissage du Néerlandais",
+        "description": "Plateforme interactive pour l'apprentissage de la langue néerlandaise"
+      },
+      "civic": {
+        "name": "Civic Alert Lite",
+        "description": "Système de signalement des problèmes civiques avec backend Firebase"
+      },
+      "kpesa": {
+        "name": "Kpesa",
+        "description": "Application de gestion financière pour usage personnel et professionnel"
+      }
+    },
+    "viewProject": "Voir le Projet"
+  },
+  "education": {
+    "title": "Formation",
+    "ongoing": "En cours",
+    "completed": "Terminé",
+    "items": {
+      "alx": {
+        "name": "Programme Data Analytics ALX",
+        "institution": "Cohorte Data Analytics 2025",
+        "description": [
+          "Expertise en nettoyage, visualisation et interprétation des données avec SQL, Power BI et Tableau.",
+          "Application des méthodologies Agile pour la résolution collaborative de problèmes."
+        ]
+      },
+      "worldquant_cv": {
+        "name": "Deep Learning pour la Vision par Ordinateur",
+        "institution": "WorldQuant University",
+        "description": [
+          "Spécialisation dans les applications de vision par ordinateur du deep learning",
+          "Développement de solutions IA pratiques pour des problèmes réels"
+        ]
+      },
+      "worldquant_ai": {
+        "name": "Intelligence Artificielle",
+        "institution": "WorldQuant University",
+        "description": [
+          "Étude approfondie des principes et applications de l'IA",
+          "Focus sur l'implémentation pratique des solutions IA"
+        ]
+      },
+      "stanford": {
+        "name": "Code in Place : Introduction à la Programmation avec Python",
+        "institution": "Stanford University",
+        "description": [
+          "Cours intensif de programmation Python de Stanford University",
+          "Évaluation diagnostique et projet final réussis avec distinction"
+        ]
+      },
+      "mua": {
+        "name": "Diplôme en Technologies de l'Information",
+        "institution": "Management University of Africa (MUA)",
+        "description": [
+          "Diplômé avec distinction",
+          "Spécialisation en développement logiciel moderne et infrastructure IT"
+        ]
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications & Badges",
+    "viewCertification": "Voir le Certificat"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "name": "Votre Nom",
+    "email": "Votre Email",
+    "message": "Votre Message",
+    "send": "Envoyer Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Échec de l'envoi. Veuillez réessayer."
+  },
+  "language": {
+    "en": "Anglais",
+    "nl": "Néerlandais",
+    "fr": "Français"
+  }
+}

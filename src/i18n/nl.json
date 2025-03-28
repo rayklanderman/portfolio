@@ -1,0 +1,102 @@
+{
+  "header": {
+    "subtitle": "Software Ontwikkelaar | AI Prompt Engineer | Creatief",
+    "downloadCV": "Download CV"
+  },
+  "profile": {
+    "title": "Professioneel Profiel",
+    "description": "Als gepassioneerde Software Ontwikkelaar, AI Prompt Engineer en Cloud Enthousiasteling, streef ik ernaar om slimme, schaalbare oplossingen te ontwerpen die echte uitdagingen oplossen. Mijn expertise omvat full-stack ontwikkeling, AI-integratie en cloud computing, waardoor ik applicaties kan maken die zowel innovatief als impactvol zijn. Gedreven door een onverzadigbare nieuwsgierigheid, verdiep ik me voortdurend in AI-implementatie en cloudtechnologieën, en ben ik erop gebrand om de grenzen van wat technologie kan bereiken te verleggen. Ik werk graag samen aan spannende projecten of verken de nieuwste technologieën—laten we samen iets buitengewoons creëren!"
+  },
+  "projects": {
+    "title": "Uitgelichte Projecten",
+    "items": {
+      "sauti": {
+        "name": "Sauti ya Wanainchi",
+        "description": "Een platform voor gemeenschapsbetrokkenheid en feedback verzameling"
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "description": "AI-aangedreven gezondheidsconsultatieplatform met Supabase-integratie"
+      },
+      "dutch": {
+        "name": "Nederlandse Leerapplicatie",
+        "description": "Interactief platform voor het leren van de Nederlandse taal"
+      },
+      "civic": {
+        "name": "Civic Alert Lite",
+        "description": "Gemeenschapsgericht meldingssysteem voor burgerlijke kwesties met Firebase backend"
+      },
+      "kpesa": {
+        "name": "Kpesa",
+        "description": "Financieel beheerapp voor persoonlijk en zakelijk gebruik"
+      }
+    },
+    "viewProject": "Project Bekijken"
+  },
+  "education": {
+    "title": "Opleiding",
+    "ongoing": "Lopend",
+    "completed": "Afgerond",
+    "items": {
+      "alx": {
+        "name": "ALX Data Analytics Programma",
+        "institution": "Data Analytics Cohort 2025",
+        "description": [
+          "Expertise in data cleaning, visualisatie en interpretatie met SQL, Power BI en Tableau.",
+          "Toepassing van Agile methodologieën voor collaboratieve probleemoplossing."
+        ]
+      },
+      "worldquant_cv": {
+        "name": "Deep Learning voor Computer Vision",
+        "institution": "WorldQuant University",
+        "description": [
+          "Specialisatie in computer vision toepassingen van deep learning",
+          "Ontwikkeling van praktische AI-oplossingen voor echte problemen"
+        ]
+      },
+      "worldquant_ai": {
+        "name": "Kunstmatige Intelligentie",
+        "institution": "WorldQuant University",
+        "description": [
+          "Uitgebreide studie van AI-principes en toepassingen",
+          "Focus op praktische implementatie van AI-oplossingen"
+        ]
+      },
+      "stanford": {
+        "name": "Code in Place: Introductie tot Programmeren met Python",
+        "institution": "Stanford University",
+        "description": [
+          "Intensieve Python programmeercursus van Stanford University",
+          "Diagnostische beoordeling en eindproject met onderscheiding afgerond"
+        ]
+      },
+      "mua": {
+        "name": "Diploma Informatietechnologie",
+        "institution": "Management University of Africa (MUA)",
+        "description": [
+          "Afgestudeerd met onderscheiding",
+          "Focus op moderne softwareontwikkeling en IT-infrastructuur"
+        ]
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificeringen & Badges",
+    "viewCertification": "Bekijk Certificaat"
+  },
+  "contact": {
+    "title": "Neem Contact Op",
+    "name": "Uw Naam",
+    "email": "Uw Email",
+    "message": "Uw Bericht",
+    "send": "Verstuur Bericht",
+    "sending": "Versturen...",
+    "success": "Bericht succesvol verzonden!",
+    "error": "Verzenden mislukt. Probeer het opnieuw."
+  },
+  "language": {
+    "en": "Engels",
+    "nl": "Nederlands",
+    "fr": "Frans"
+  }
+}

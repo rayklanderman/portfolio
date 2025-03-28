@@ -1,0 +1,97 @@
+{
+  "header": {
+    "subtitle": "Software Developer | AI Prompt Engineer | Creative",
+    "downloadCV": "Download CV"
+  },
+  "profile": {
+    "title": "Professional Profile",
+    "description": "As a passionate Software Developer, AI Prompt Engineer, and Cloud Enthusiast, I thrive on designing smart, scalable solutions that solve real-world challenges. My expertise spans full-stack development, AI integration, and cloud computing, empowering me to craft applications that are both innovative and impactful. Fueled by an insatiable curiosity, I'm always diving deeper into AI deployment and cloud technologies, eager to push the limits of what technology can achieve. I'd love to connect, collaborate on exciting projects, or explore the latest in tech—let's make something extraordinary together!"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "items": {
+      "sauti": {
+        "name": "Sauti ya Wanainchi",
+        "description": "A platform for community engagement and feedback collection"
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "description": "AI-powered healthcare consultation platform with Supabase integration"
+      },
+      "dutch": {
+        "name": "Dutch Learning App",
+        "description": "Interactive platform for learning Dutch language"
+      },
+      "civic": {
+        "name": "Civic Alert Lite",
+        "description": "Community-driven civic issue reporting system with Firebase backend"
+      },
+      "kpesa": {
+        "name": "Kpesa",
+        "description": "Financial management app for personal and business use"
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "items": {
+      "alx": {
+        "name": "ALX Data Analytics Program",
+        "institution": "Data Analytics Cohort 2025",
+        "description": [
+          "Gaining expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau.",
+          "Applying Agile methodologies for collaborative problem-solving."
+        ]
+      },
+      "worldquant_cv": {
+        "name": "Deep Learning for Computer Vision",
+        "institution": "WorldQuant University",
+        "description": [
+          "Specializing in computer vision applications of deep learning",
+          "Building practical AI solutions for real-world problems"
+        ]
+      },
+      "worldquant_ai": {
+        "name": "Artificial Intelligence",
+        "institution": "WorldQuant University",
+        "description": [
+          "Comprehensive study of AI principles and applications",
+          "Focus on practical implementation of AI solutions"
+        ]
+      },
+      "stanford": {
+        "name": "Code in Place: Introduction to Programming with Python",
+        "institution": "Stanford University",
+        "description": [
+          "Intensive Python programming course from Stanford University",
+          "Completed diagnostic assessment and final project with distinction"
+        ]
+      },
+      "mua": {
+        "name": "Diploma in Information Communication Technology",
+        "institution": "Management University of Africa (MUA)",
+        "description": [
+          "Graduated with Distinction",
+          "Focus on modern software development and IT infrastructure"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "language": {
+    "en": "English",
+    "nl": "Dutch",
+    "fr": "French"
+  }
+}

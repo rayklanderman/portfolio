@@ -1,0 +1,42 @@
+.footer {
+  padding: 2rem;
+  background: var(--footer-bg);
+  color: var(--text-primary);
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+
+    .social-link {
+      color: var(--text-primary);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        opacity: 1;
+        color: var(--accent-color);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+}
