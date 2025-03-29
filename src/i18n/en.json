@@ -1,7 +1,12 @@
 {
   "header": {
     "subtitle": "Software Developer | AI Prompt Engineer | Creative",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "share": "Share Profile"
+  },
+  "share": {
+    "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
+    "copied": "Portfolio URL copied to clipboard!"
   },
   "profile": {
     "title": "Professional Profile",

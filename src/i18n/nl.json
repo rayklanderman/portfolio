@@ -1,7 +1,12 @@
 {
   "header": {
     "subtitle": "Software Ontwikkelaar | AI Prompt Engineer | Creatief",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "share": "Profiel Delen"
+  },
+  "share": {
+    "message": "Bekijk het Portfolio van Raymond Klanderman - Software Ontwikkelaar & AI Engineer",
+    "copied": "Portfolio URL gekopieerd naar klembord!"
   },
   "profile": {
     "title": "Professioneel Profiel",

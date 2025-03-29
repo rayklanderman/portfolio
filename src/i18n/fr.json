@@ -1,7 +1,12 @@
 {
   "header": {
     "subtitle": "Développeur Logiciel | Ingénieur en Prompt AI | Créatif",
-    "downloadCV": "Télécharger CV"
+    "downloadCV": "Télécharger CV",
+    "share": "Partager le Profil"
+  },
+  "share": {
+    "message": "Découvrez le Portfolio de Raymond Klanderman - Développeur Logiciel & Ingénieur en IA",
+    "copied": "URL du portfolio copiée dans le presse-papiers !"
   },
   "profile": {
     "title": "Profil Professionnel",

@@ -1,8 +1,9 @@
 import './Header.scss';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
 import CVRequestModal from './CVRequestModal';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaShareAlt } from 'react-icons/fa';
 import { SiCredly, SiGooglecloud } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
@@ -16,6 +17,27 @@ const Header = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Raymond Klanderman - Portfolio',
+          text: t('share.message'),
+          url: window.location.href,
+        });
+      } catch (error) {
+        console.log('Error sharing:', error);
+      }
+    } else {
+      // Fallback for browsers that don't support Web Share API
+      navigator.clipboard.writeText(window.location.href);
+      toast.success(t('share.copied'), {
+        position: "bottom-right",
+        autoClose: 3000
+      });
+    }
   };
 
   const socialLinks = [
@@ -84,6 +106,10 @@ const Header = () => {
                 <polyline points="7 10 12 15 17 10"/>
                 <line x1="12" y1="15" x2="12" y2="3"/>
               </svg>
+            </button>
+            <button onClick={handleShare} className="share-button">
+              {t('header.share')}
+              <FaShareAlt />
             </button>
             {isModalOpen && <CVRequestModal onClose={handleCloseModal} />}
           </div>
