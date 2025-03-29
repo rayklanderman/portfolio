@@ -47,11 +47,19 @@
         ]
       },
       "worldquant_cv": {
-        "name": "Deep Learning pour la Vision par Ordinateur",
+        "name": "Laboratoire d'IA Appliquée : Deep Learning pour la Vision par Ordinateur",
         "institution": "WorldQuant University",
         "description": [
-          "Spécialisation dans les applications de vision par ordinateur du deep learning",
-          "Développement de solutions IA pratiques pour des problèmes réels"
+          "Maîtrise des frameworks de deep learning et des techniques de vision par ordinateur",
+          "Construction et déploiement d'applications d'IA pour le monde réel"
+        ]
+      },
+      "worldquant_ds": {
+        "name": "Laboratoire de Science des Données Appliquée",
+        "institution": "WorldQuant University",
+        "description": [
+          "Techniques avancées d'analyse de données et d'apprentissage automatique",
+          "Implémentation de projets de science des données du monde réel"
         ]
       },
       "worldquant_ai": {

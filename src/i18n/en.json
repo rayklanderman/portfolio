@@ -47,19 +47,19 @@
         ]
       },
       "worldquant_cv": {
-        "name": "Deep Learning for Computer Vision",
+        "name": "Applied AI Lab: Deep Learning for Computer Vision",
         "institution": "WorldQuant University",
         "description": [
-          "Specializing in computer vision applications of deep learning",
-          "Building practical AI solutions for real-world problems"
+          "Mastering deep learning frameworks and computer vision techniques",
+          "Building and deploying real-world AI applications"
         ]
       },
-      "worldquant_ai": {
-        "name": "Artificial Intelligence",
+      "worldquant_ds": {
+        "name": "Applied Data Science Lab",
         "institution": "WorldQuant University",
         "description": [
-          "Comprehensive study of AI principles and applications",
-          "Focus on practical implementation of AI solutions"
+          "Advanced data analysis and machine learning techniques",
+          "Real-world data science project implementation"
         ]
       },
       "stanford": {

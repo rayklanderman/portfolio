@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="100" cy="100" r="95" fill="#0F62FE" stroke="#FFFFFF" stroke-width="2"/>
-  <path d="M50 100 H150" stroke="white" stroke-width="4"/>
-  <path d="M100 50 V150" stroke="white" stroke-width="4"/>
-  <circle cx="100" cy="100" r="30" fill="white"/>
-  <text x="100" y="85" text-anchor="middle" fill="#0F62FE" font-family="Arial" font-weight="bold" font-size="14">IBM</text>
-  <text x="100" y="105" text-anchor="middle" fill="#0F62FE" font-family="Arial" font-size="12">DATA</text>
-  <text x="100" y="125" text-anchor="middle" fill="#0F62FE" font-family="Arial" font-size="10">FUNDAMENTALS</text>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1F70C1" />
+  
+  <!-- Text -->
+  <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    IBM Data
+  </text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+    Fundamentals
+  </text>
 </svg>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface CVRequestModalProps {
   onClose: () => void;
@@ -7,33 +9,47 @@ interface CVRequestModalProps {
 
 const CVRequestModal: React.FC<CVRequestModalProps> = ({ onClose }) => {
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
     const formData = new FormData();
     formData.append('email', email);
 
-    fetch('https://formspree.io/f/mnnpbdzv', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
+    try {
+      const response = await fetch('https://formspree.io/f/mnnpbdzv', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
       if (response.ok) {
-        alert('Raymond will respond by replying with his CV information.');
-        onClose(); // Close the modal
+        toast.success('Request sent successfully! Raymond will respond with his CV information.');
+        onClose();
       } else {
-        alert('Error sending message. Please try again.');
+        const data = await response.json();
+        toast.error(data.error || 'Error sending message. Please try again.');
       }
-    }).catch(() => {
-      alert('Error sending message. Please try again.');
-    });
+    } catch (error) {
+      toast.error('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="modal-overlay">
-      <motion.div className="modal-content" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }}>
+      <motion.div 
+        className="modal-content" 
+        initial={{ scale: 0 }} 
+        animate={{ scale: 1 }} 
+        exit={{ scale: 0 }}
+      >
         <h2>Request CV</h2>
         <form onSubmit={handleSubmit}>
           <label>
@@ -43,11 +59,14 @@ const CVRequestModal: React.FC<CVRequestModalProps> = ({ onClose }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              disabled={isSubmitting}
             />
           </label>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send'}
+          </button>
         </form>
-        <button onClick={onClose}>Close</button>
+        <button onClick={onClose} disabled={isSubmitting}>Close</button>
       </motion.div>
     </div>
   );

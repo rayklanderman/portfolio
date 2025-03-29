@@ -10,6 +10,14 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
+    .contact-form {
+      form {
+        button {
+          color: black !important;
+        }
+      }
+    }
   }
 
   .social-links {

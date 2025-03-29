@@ -118,13 +118,13 @@ const CV: React.FC = () => {
       skills: ['Deep Learning', 'Computer Vision', 'AI']
     },
     {
-      id: 'worldquant_ai',
-      name: t('education.items.worldquant_ai.name'),
-      institution: t('education.items.worldquant_ai.institution'),
+      id: 'worldquant_ds',
+      name: t('education.items.worldquant_ds.name'),
+      institution: t('education.items.worldquant_ds.institution'),
       period: '2025',
       status: 'Ongoing',
-      description: t('education.items.worldquant_ai.description', { returnObjects: true }) as string[],
-      skills: ['AI', 'Machine Learning', 'Data Science']
+      description: t('education.items.worldquant_ds.description', { returnObjects: true }) as string[],
+      skills: ['Data Science', 'Machine Learning', 'Analytics']
     },
     {
       id: 'stanford',

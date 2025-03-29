@@ -47,11 +47,19 @@
         ]
       },
       "worldquant_cv": {
-        "name": "Deep Learning voor Computer Vision",
+        "name": "Toegepaste AI Lab: Deep Learning voor Computer Vision",
         "institution": "WorldQuant University",
         "description": [
-          "Specialisatie in computer vision toepassingen van deep learning",
-          "Ontwikkeling van praktische AI-oplossingen voor echte problemen"
+          "Beheersing van deep learning frameworks en computer vision technieken",
+          "Bouwen en implementeren van AI-toepassingen voor de praktijk"
+        ]
+      },
+      "worldquant_ds": {
+        "name": "Toegepaste Data Science Lab",
+        "institution": "WorldQuant University",
+        "description": [
+          "Geavanceerde data-analyse en machine learning technieken",
+          "Implementatie van praktijkgerichte data science projecten"
         ]
       },
       "worldquant_ai": {

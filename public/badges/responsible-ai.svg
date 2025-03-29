@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="100" cy="100" r="95" fill="#4285F4" stroke="#FFFFFF" stroke-width="2"/>
-  <path d="M80 70 L120 70 L140 100 L120 130 L80 130 L60 100 Z" fill="white"/>
-  <circle cx="100" cy="100" r="25" fill="#4285F4"/>
-  <text x="100" y="85" text-anchor="middle" fill="white" font-family="Arial" font-weight="bold" font-size="14">RESPONSIBLE</text>
-  <text x="100" y="105" text-anchor="middle" fill="white" font-family="Arial" font-size="12">AI</text>
-  <text x="100" y="125" text-anchor="middle" fill="white" font-family="Arial" font-size="10">GOOGLE CLOUD</text>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean background circle -->
+  <circle cx="100" cy="100" r="90" fill="#FBBC05" />
+  
+  <!-- Text -->
+  <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    Responsible
+  </text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+    AI
+  </text>
 </svg>

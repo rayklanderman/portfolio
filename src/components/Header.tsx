@@ -1,9 +1,14 @@
 import './Header.scss';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import CVRequestModal from './CVRequestModal';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { SiCredly, SiGooglecloud } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -12,6 +17,34 @@ const Header = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  const socialLinks = [
+    {
+      icon: <FaGithub />,
+      url: 'https://github.com/rayklanderman',
+      label: 'GitHub'
+    },
+    {
+      icon: <FaLinkedin />,
+      url: 'https://www.linkedin.com/in/rayklanderman',
+      label: 'LinkedIn'
+    },
+    {
+      icon: <FaEnvelope />,
+      url: 'mailto:rayklanderman@gmail.com',
+      label: 'Email'
+    },
+    {
+      icon: <SiCredly />,
+      url: 'https://www.credly.com/users/rayklanderman/',
+      label: 'Credly Profile'
+    },
+    {
+      icon: <SiGooglecloud />,
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
+      label: 'Google Cloud Skills'
+    }
+  ];
 
   return (
     <header className="header">
@@ -25,10 +58,27 @@ const Header = () => {
         </div>
         <div className="text-content">
           <h1>Raymond Klanderman</h1>
-          <p className="subtitle">Software Developer | AI Prompt Engineer | Creative</p>
+          <p className="subtitle">{t('header.subtitle')}</p>
+          <div className="social-links">
+            {socialLinks.map((link, index) => (
+              <motion.a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                title={link.label}
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {link.icon}
+              </motion.a>
+            ))}
+          </div>
           <div className="cta-buttons">
             <button onClick={handleOpenModal} className="download-cv">
-              Download CV
+              {t('header.downloadCV')}
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
