@@ -116,7 +116,7 @@
       border: none;
       cursor: pointer;
       transition: all 0.3s ease;
-      background: #34C759;
+      background: linear-gradient(135deg, #34C759, darken(#34C759, 15%));
       color: white;
 
       &:hover {
@@ -131,7 +131,7 @@
     }
 
     .share-button {
-      background: #007AFF;
+      background: linear-gradient(135deg, #007AFF, darken(#007AFF, 15%));
       
       &:hover {
         box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);

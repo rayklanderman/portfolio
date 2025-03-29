@@ -1,14 +1,15 @@
 import './LanguageSwitcher.scss';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import ReactCountryFlag from 'react-country-flag';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'nl', name: 'Nederlands' },
-    { code: 'fr', name: 'Français' }
+    { code: 'en', countryCode: 'GB' },
+    { code: 'nl', countryCode: 'NL' },
+    { code: 'fr', countryCode: 'FR' }
   ];
 
   const changeLanguage = (lng: string) => {
@@ -29,8 +30,17 @@ const LanguageSwitcher = () => {
           className={`language-btn ${i18n.language === lang.code ? 'active' : ''}`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          title={lang.code.toUpperCase()}
         >
-          {lang.name}
+          <ReactCountryFlag
+            countryCode={lang.countryCode}
+            svg
+            style={{
+              width: '1.2em',
+              height: '1.2em'
+            }}
+            title={lang.code.toUpperCase()}
+          />
         </motion.button>
       ))}
     </motion.div>
