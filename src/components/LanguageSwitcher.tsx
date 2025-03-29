@@ -1,14 +1,14 @@
-import React from 'react';
+import './LanguageSwitcher.scss';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-const LanguageSwitcher: React.FC = () => {
-  const { t, i18n } = useTranslation();
+const LanguageSwitcher = () => {
+  const { i18n } = useTranslation();
   
   const languages = [
-    { code: 'en', name: t('language.en') },
-    { code: 'nl', name: t('language.nl') },
-    { code: 'fr', name: t('language.fr') }
+    { code: 'en', name: 'English' },
+    { code: 'nl', name: 'Nederlands' },
+    { code: 'fr', name: 'Français' }
   ];
 
   const changeLanguage = (lng: string) => {
@@ -27,7 +27,7 @@ const LanguageSwitcher: React.FC = () => {
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
           className={`language-btn ${i18n.language === lang.code ? 'active' : ''}`}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           {lang.name}
