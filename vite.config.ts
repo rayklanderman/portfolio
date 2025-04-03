@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,8 +16,17 @@ export default defineConfig({
   },
   base: './',
   build: {
-    sourcemap: false, // Disable source maps in production
+    outDir: 'dist',
+    sourcemap: true,
     minify: 'terser',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          translations: ['i18next', 'react-i18next']
+        }
+      }
+    },
     terserOptions: {
       compress: {
         drop_console: true, // Remove console.log in production
