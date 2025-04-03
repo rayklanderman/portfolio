@@ -97,6 +97,62 @@
     "title": "Certifications & Badges",
     "viewCertification": "Voir le Certificat"
   },
+  "badges": {
+    "title": "Badges et Certificats",
+    "verify": "Vérifier le Certificat →",
+    "items": {
+      "responsible_ai_privacy": {
+        "name": "IA Responsable pour Développeurs : Confidentialité et Sécurité",
+        "issuer": "Google Cloud",
+        "skills": ["Confidentialité IA", "Sécurité", "IA Responsable"]
+      },
+      "responsible_ai_transparency": {
+        "name": "IA Responsable pour Développeurs : Interprétabilité et Transparence",
+        "issuer": "Google Cloud",
+        "skills": ["Transparence IA", "Interprétabilité ML", "Éthique IA"]
+      },
+      "cybersecurity": {
+        "name": "Fondamentaux de la Cybersécurité",
+        "issuer": "IBM",
+        "skills": ["Cybersécurité", "Sécurité Réseau", "Meilleures Pratiques de Sécurité"]
+      },
+      "ibm_data": {
+        "name": "Fondamentaux des Données IBM",
+        "issuer": "IBM",
+        "skills": ["Science des Données", "Apprentissage Automatique", "Statistiques"]
+      },
+      "google_cloud": {
+        "name": "Essentiels Google Cloud",
+        "issuer": "Google Cloud",
+        "skills": ["Cloud Computing", "DevOps", "Sécurité"]
+      },
+      "mlops": {
+        "name": "MLOps pour l'IA Générative",
+        "issuer": "Google Cloud",
+        "skills": ["MLOps", "IA/ML", "DevOps"]
+      },
+      "oracle_cloud": {
+        "name": "Infrastructure Cloud Oracle",
+        "issuer": "Oracle",
+        "skills": ["Architecture Cloud", "Infrastructure", "Sécurité"]
+      },
+      "stem": {
+        "name": "Anglais pour STEM",
+        "issuer": "Badgr",
+        "skills": ["Rédaction Technique", "Communication", "Documentation"]
+      },
+      "responsible_ai": {
+        "name": "IA Responsable",
+        "issuer": "Google Cloud",
+        "skills": ["Éthique IA", "Apprentissage Automatique", "Gouvernance"]
+      },
+      "prompt_design": {
+        "name": "Conception de Prompts",
+        "issuer": "Google Cloud",
+        "skills": ["IA/ML", "Ingénierie de Prompts", "LLMs"]
+      }
+    }
+  },
   "contact": {
     "title": "Me Contacter",
     "name": "Votre Nom",
@@ -111,5 +167,11 @@
     "en": "Anglais",
     "nl": "Néerlandais",
     "fr": "Français"
+  },
+  "menu": {
+    "profile": "Profil",
+    "projects": "Projets",
+    "education": "Éducation",
+    "badges": "Badges"
   }
 }

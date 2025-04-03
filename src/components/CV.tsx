@@ -3,9 +3,13 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 interface Badge {
+  id: string;
   name: string;
   url: string;
   imageUrl: string;
+  issuer: string;
+  issueDate: string;
+  skills?: string[];
 }
 
 interface Education {
@@ -149,39 +153,94 @@ const CV: React.FC = () => {
 
   const badges: Badge[] = [
     {
-      name: 'IBM Data Fundamentals',
-      url: 'https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483/public_url',
-      imageUrl: '/badges/ibm-data.svg'
-    },
-    {
-      name: 'Google Cloud Essentials',
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13957857',
-      imageUrl: '/badges/google-cloud.svg'
-    },
-    {
-      name: 'MLOps for Generative AI',
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12568746',
-      imageUrl: '/badges/mlops.svg'
-    },
-    {
-      name: 'Oracle Cloud Infrastructure',
-      url: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=49A15607374E24FA7679A60B84772945389935111D718627D9E4CD0035F88FC8',
-      imageUrl: '/badges/oracle-cloud.svg'
-    },
-    {
-      name: 'English for STEM',
-      url: 'https://api.badgr.io/public/assertions/fgPvk8wpSnq5ePJwR8WerA',
-      imageUrl: '/badges/stem.svg'
-    },
-    {
-      name: 'Responsible AI',
+      id: 'responsible_ai_privacy',
+      name: t('badges.items.responsible_ai_privacy.name'),
       url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13899903',
-      imageUrl: '/badges/responsible-ai.svg'
+      imageUrl: '/badges/responsible-ai-privacy.svg',
+      issuer: t('badges.items.responsible_ai_privacy.issuer'),
+      issueDate: '2024-03-15',
+      skills: t('badges.items.responsible_ai_privacy.skills', { returnObjects: true }) as string[]
     },
     {
-      name: 'Prompt Design',
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12560333',
-      imageUrl: '/badges/prompt-design.svg'
+      id: 'responsible_ai_transparency',
+      name: t('badges.items.responsible_ai_transparency.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13900213',
+      imageUrl: '/badges/responsible-ai-transparency.svg',
+      issuer: t('badges.items.responsible_ai_transparency.issuer'),
+      issueDate: '2024-03-20',
+      skills: t('badges.items.responsible_ai_transparency.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'cybersecurity',
+      name: t('badges.items.cybersecurity.name'),
+      url: 'https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626',
+      imageUrl: '/badges/cybersecurity.svg',
+      issuer: t('badges.items.cybersecurity.issuer'),
+      issueDate: '2024-03-25',
+      skills: t('badges.items.cybersecurity.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'ibm_data',
+      name: t('badges.items.ibm_data.name'),
+      url: 'https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483/public_url',
+      imageUrl: '/badges/ibm-data.svg',
+      issuer: t('badges.items.ibm_data.issuer'),
+      issueDate: '2024-01-01',
+      skills: t('badges.items.ibm_data.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'google_cloud',
+      name: t('badges.items.google_cloud.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
+      imageUrl: '/badges/google-cloud.svg',
+      issuer: t('badges.items.google_cloud.issuer'),
+      issueDate: '2024-02-01',
+      skills: t('badges.items.google_cloud.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'mlops',
+      name: t('badges.items.mlops.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
+      imageUrl: '/badges/mlops.svg',
+      issuer: t('badges.items.mlops.issuer'),
+      issueDate: '2024-03-01',
+      skills: t('badges.items.mlops.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'oracle_cloud',
+      name: t('badges.items.oracle_cloud.name'),
+      url: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=example',
+      imageUrl: '/badges/oracle-cloud.svg',
+      issuer: t('badges.items.oracle_cloud.issuer'),
+      issueDate: '2024-04-01',
+      skills: t('badges.items.oracle_cloud.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'stem',
+      name: t('badges.items.stem.name'),
+      url: 'https://example.com/badges/stem',
+      imageUrl: '/badges/stem.svg',
+      issuer: t('badges.items.stem.issuer'),
+      issueDate: '2024-05-01',
+      skills: t('badges.items.stem.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'responsible_ai',
+      name: t('badges.items.responsible_ai.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
+      imageUrl: '/badges/responsible-ai.svg',
+      issuer: t('badges.items.responsible_ai.issuer'),
+      issueDate: '2024-06-01',
+      skills: t('badges.items.responsible_ai.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'prompt_design',
+      name: t('badges.items.prompt_design.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
+      imageUrl: '/badges/prompt-design.svg',
+      issuer: t('badges.items.prompt_design.issuer'),
+      issueDate: '2024-07-01',
+      skills: t('badges.items.prompt_design.skills', { returnObjects: true }) as string[]
     }
   ];
 
@@ -198,6 +257,7 @@ const CV: React.FC = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
+          id="profile"
         >
           <h2>{t('profile.title')}</h2>
           <p>{t('profile.description')}</p>
@@ -208,49 +268,40 @@ const CV: React.FC = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
+          id="projects"
         >
           <h2>{t('projects.title')}</h2>
           <div className="projects-grid">
             {projects.map((project, index) => (
-              <motion.a 
+              <motion.div
                 key={project.id}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-card"
+                className={`project-card`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
               >
-                <div className="project-content">
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <div className="tech-stack">
-                    {project.techStack.map((tech, i) => (
-                      <div key={tech.name} className="tech-item">
-                        <span className="tech-name">{tech.name}</span>
-                        <div className="tech-bar">
-                          <motion.div 
-                            className="tech-progress"
-                            initial={{ width: 0 }}
-                            animate={{ width: `${tech.percentage}%` }}
-                            transition={{ duration: 1, delay: 0.2 * i }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  {project.additionalTech && (
-                    <div className="additional-tech">
-                      {project.additionalTech.map(tech => (
-                        <span key={tech} className="tech-tag">{tech}</span>
-                      ))}
-                    </div>
-                  )}
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-title"
+                >
+                  <strong>{project.name}</strong>
+                </a>
+                <p className="project-description">{project.description}</p>
+                <div className="tech-stack">
+                  {project.techStack.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-item">
+                      {tech.name}
+                    </span>
+                  ))}
+                  {project.additionalTech?.map((tech, techIndex) => (
+                    <span key={`additional-${techIndex}`} className="tech-item">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-              </motion.a>
+              </motion.div>
             ))}
           </div>
         </motion.div>
@@ -260,6 +311,7 @@ const CV: React.FC = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6 }}
+          id="education"
         >
           <h2>{t('education.title')}</h2>
           <div className="education-grid">
@@ -310,12 +362,13 @@ const CV: React.FC = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8 }}
+          id="badges"
         >
-          <h2>Badges & Certifications</h2>
+          <h2>{t('badges.title')}</h2>
           <div className="badges-grid">
             {badges.map((badge, index) => (
               <motion.a
-                key={badge.name}
+                key={badge.id}
                 href={badge.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -323,14 +376,10 @@ const CV: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
-                whileHover={{ 
-                  scale: 1.05,
-                  boxShadow: '0 8px 15px rgba(0, 0, 0, 0.1)'
-                }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.02 }}
               >
                 <div className="badge-image">
-                  <img src={badge.imageUrl} alt={badge.name} />
+                  <img src={badge.imageUrl} alt={badge.name} loading="lazy" />
                 </div>
                 <div className="badge-details">
                   <h3>{badge.name}</h3>
@@ -341,6 +390,18 @@ const CV: React.FC = () => {
                       <path d="M10 14L21 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
+                  <div className="badge-issuer">{badge.issuer}</div>
+                  <div className="badge-date">{badge.issueDate}</div>
+                  {badge.skills && (
+                    <div className="badge-skills">
+                      {badge.skills.map((skill, i) => (
+                        <span key={i} className="skill-tag">{skill}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="badge-verify">
+                  {t('badges.verify')}
                 </div>
               </motion.a>
             ))}

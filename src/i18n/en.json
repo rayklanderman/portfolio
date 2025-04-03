@@ -18,23 +18,28 @@
     "items": {
       "sauti": {
         "name": "Sauti ya Wanainchi",
-        "description": "A platform for community engagement and feedback collection"
+        "description": "A platform for community engagement and feedback collection",
+        "technologies": ["React", "Node.js", "MongoDB", "Express"]
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "AI-powered healthcare consultation platform with Supabase integration"
+        "description": "AI-powered healthcare consultation platform with Supabase integration",
+        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"]
       },
       "dutch": {
         "name": "Dutch Learning App",
-        "description": "Interactive platform for learning Dutch language"
+        "description": "Interactive platform for learning Dutch language",
+        "technologies": ["React", "Firebase", "TailwindCSS", "i18n"]
       },
       "civic": {
         "name": "Civic Alert Lite",
-        "description": "Community-driven civic issue reporting system with Firebase backend"
+        "description": "Community-driven civic issue reporting system with Firebase backend",
+        "technologies": ["React Native", "Firebase", "Google Maps API"]
       },
       "kpesa": {
         "name": "Kpesa",
-        "description": "Financial management app for personal and business use"
+        "description": "Financial management app for personal and business use",
+        "technologies": ["Flutter", "Firebase", "Cloud Functions"]
       }
     }
   },
@@ -85,6 +90,62 @@
       }
     }
   },
+  "badges": {
+    "title": "Badges & Certificates",
+    "verify": "Verify Certificate →",
+    "items": {
+      "responsible_ai_privacy": {
+        "name": "Responsible AI for Developers: Privacy & Safety",
+        "issuer": "Google Cloud",
+        "skills": ["AI Privacy", "Security", "Responsible AI"]
+      },
+      "responsible_ai_transparency": {
+        "name": "Responsible AI for Developers: Interpretability & Transparency",
+        "issuer": "Google Cloud",
+        "skills": ["AI Transparency", "ML Interpretability", "AI Ethics"]
+      },
+      "cybersecurity": {
+        "name": "Cybersecurity Fundamentals",
+        "issuer": "IBM",
+        "skills": ["Cybersecurity", "Network Security", "Security Best Practices"]
+      },
+      "ibm_data": {
+        "name": "IBM Data Fundamentals",
+        "issuer": "IBM",
+        "skills": ["Data Science", "Machine Learning", "Statistics"]
+      },
+      "google_cloud": {
+        "name": "Google Cloud Essentials",
+        "issuer": "Google Cloud",
+        "skills": ["Cloud Computing", "DevOps", "Security"]
+      },
+      "mlops": {
+        "name": "MLOps for Generative AI",
+        "issuer": "Google Cloud",
+        "skills": ["MLOps", "AI/ML", "DevOps"]
+      },
+      "oracle_cloud": {
+        "name": "Oracle Cloud Infrastructure",
+        "issuer": "Oracle",
+        "skills": ["Cloud Architecture", "Infrastructure", "Security"]
+      },
+      "stem": {
+        "name": "English for STEM",
+        "issuer": "Badgr",
+        "skills": ["Technical Writing", "Communication", "Documentation"]
+      },
+      "responsible_ai": {
+        "name": "Responsible AI",
+        "issuer": "Google Cloud",
+        "skills": ["AI Ethics", "Machine Learning", "Governance"]
+      },
+      "prompt_design": {
+        "name": "Prompt Design",
+        "issuer": "Google Cloud",
+        "skills": ["AI/ML", "Prompt Engineering", "LLMs"]
+      }
+    }
+  },
   "contact": {
     "title": "Contact Me",
     "name": "Your Name",
@@ -93,6 +154,12 @@
     "send": "Send Message",
     "success": "Message sent successfully!",
     "error": "Failed to send message. Please try again."
+  },
+  "menu": {
+    "profile": "Profile",
+    "projects": "Projects",
+    "education": "Education",
+    "badges": "Badges"
   },
   "language": {
     "en": "English",

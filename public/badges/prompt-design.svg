@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Clean background circle -->
-  <circle cx="100" cy="100" r="90" fill="#EA4335" />
-  
-  <!-- Text -->
-  <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
-    Prompt
-  </text>
-  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
-    Design
-  </text>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradPrompt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbc05;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="150" fill="#f8f9fa"/>
+  <circle cx="150" cy="150" r="120" fill="url(#gradPrompt)" opacity="0.1"/>
+  <g transform="translate(75,75) scale(0.5)">
+    <path d="M150 50c-55.2 0-100 44.8-100 100s44.8 100 100 100 100-44.8 100-100-44.8-100-100-100zm0 180c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80z" fill="#4285f4"/>
+    <path d="M130 90l80 60-80 60v-40h-60v-40h60v-40z" fill="#fbbc05"/>
+  </g>
 </svg>

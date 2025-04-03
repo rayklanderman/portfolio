@@ -15,6 +15,18 @@
   "projects": {
     "title": "Uitgelichte Projecten",
     "items": {
+      "kenyanese": {
+        "name": "Kenyanese",
+        "description": "Sociaal netwerk platform ontworpen om Kenianen te verbinden en content te delen. Het werd opgericht in 2024 en biedt verschillende functionaliteiten, waaronder het maken van profielen, updates plaatsen, deelnemen aan groepen en privéberichten via de berichtenfunctie. Hier is een algemeen overzicht van de tech stack: Front-end: HTML5, CSS3, JavaScript, ReactJS Back-end: Node.js, Express.js Database: MongoDB"
+      },
+      "weather": {
+        "name": "Weer Notificatie App",
+        "description": "Een op Python gebaseerde desktop applicatie die realtime weerupdates direct naar je desktop levert. Het maakt gebruik van de OpenWeather API om weergegevens op te halen en gebruikt de Plyer bibliotheek om informatieve meldingen weer te geven."
+      },
+      "webmeet": {
+        "name": "Stream Alive WebMeet",
+        "description": "Webmeet maakt gebruik van Jitsi's open-source WebRTC technologie voor zijn belangrijkste videovergaderfuncties. Dit stelt Webmeet in staat om realtime video- en audiostreaming aan te bieden. Door gebruik te maken van Jitsi's robuuste tech stack biedt Webmeet een functierijke WebRTC web vergaderervaring."
+      },
       "sauti": {
         "name": "Sauti ya Wanainchi",
         "description": "Een platform voor gemeenschapsbetrokkenheid en feedback verzameling"
@@ -97,6 +109,62 @@
     "title": "Certificeringen & Badges",
     "viewCertification": "Bekijk Certificaat"
   },
+  "badges": {
+    "title": "Badges en Certificaten",
+    "verify": "Certificaat Verifiëren →",
+    "items": {
+      "responsible_ai_privacy": {
+        "name": "Verantwoorde AI voor Ontwikkelaars: Privacy en Veiligheid",
+        "issuer": "Google Cloud",
+        "skills": ["AI Privacy", "Beveiliging", "Verantwoorde AI"]
+      },
+      "responsible_ai_transparency": {
+        "name": "Verantwoorde AI voor Ontwikkelaars: Interpreteerbaarheid en Transparantie",
+        "issuer": "Google Cloud",
+        "skills": ["AI Transparantie", "ML Interpreteerbaarheid", "AI Ethiek"]
+      },
+      "cybersecurity": {
+        "name": "Cybersecurity Fundamentals",
+        "issuer": "IBM",
+        "skills": ["Cybersecurity", "Netwerkbeveiliging", "Beveiligingspraktijken"]
+      },
+      "ibm_data": {
+        "name": "IBM Data Fundamentals",
+        "issuer": "IBM",
+        "skills": ["Data Science", "Machine Learning", "Statistiek"]
+      },
+      "google_cloud": {
+        "name": "Google Cloud Essentials",
+        "issuer": "Google Cloud",
+        "skills": ["Cloud Computing", "DevOps", "Beveiliging"]
+      },
+      "mlops": {
+        "name": "MLOps voor Generatieve AI",
+        "issuer": "Google Cloud",
+        "skills": ["MLOps", "AI/ML", "DevOps"]
+      },
+      "oracle_cloud": {
+        "name": "Oracle Cloud Infrastructuur",
+        "issuer": "Oracle",
+        "skills": ["Cloud Architectuur", "Infrastructuur", "Beveiliging"]
+      },
+      "stem": {
+        "name": "Engels voor STEM",
+        "issuer": "Badgr",
+        "skills": ["Technisch Schrijven", "Communicatie", "Documentatie"]
+      },
+      "responsible_ai": {
+        "name": "Verantwoorde AI",
+        "issuer": "Google Cloud",
+        "skills": ["AI Ethiek", "Machine Learning", "Governance"]
+      },
+      "prompt_design": {
+        "name": "Prompt Ontwerp",
+        "issuer": "Google Cloud",
+        "skills": ["AI/ML", "Prompt Engineering", "LLMs"]
+      }
+    }
+  },
   "contact": {
     "title": "Neem Contact Op",
     "name": "Uw Naam",
@@ -111,5 +179,11 @@
     "en": "Engels",
     "nl": "Nederlands",
     "fr": "Frans"
+  },
+  "menu": {
+    "profile": "Profiel",
+    "projects": "Projecten",
+    "education": "Opleiding",
+    "badges": "Badges"
   }
 }

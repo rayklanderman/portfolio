@@ -1,5 +1,5 @@
 import './Header.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import CVRequestModal from './CVRequestModal';
@@ -9,7 +9,30 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = menuItems.map(item => document.getElementById(item.id));
+      const scrollPosition = window.scrollY + 100; // Offset for better detection
+
+      sections.forEach((section) => {
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            setActiveSection(section.id);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -40,6 +63,28 @@ const Header = () => {
     }
   };
 
+  const handleScrollTo = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      setActiveSection(sectionId);
+    }
+  };
+
+  const menuItems = [
+    { id: 'profile', label: t('menu.profile') },
+    { id: 'projects', label: t('menu.projects') },
+    { id: 'education', label: t('menu.education') },
+    { id: 'badges', label: t('menu.badges') }
+  ];
+
   const socialLinks = [
     {
       icon: <FaGithub />,
@@ -48,7 +93,7 @@ const Header = () => {
     },
     {
       icon: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/rayklanderman',
+      url: 'https://www.linkedin.com/in/raymondklanderman/',
       label: 'LinkedIn'
     },
     {
@@ -81,6 +126,20 @@ const Header = () => {
         <div className="text-content">
           <h1>Raymond Klanderman</h1>
           <p className="subtitle">{t('header.subtitle')}</p>
+          <nav className="menu-buttons">
+            {menuItems.map((item) => (
+              <motion.button
+                key={item.id}
+                className={`menu-button ${activeSection === item.id ? 'active' : ''}`}
+                onClick={() => handleScrollTo(item.id)}
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {item.label}
+              </motion.button>
+            ))}
+          </nav>
           <div className="social-links">
             {socialLinks.map((link, index) => (
               <motion.a
