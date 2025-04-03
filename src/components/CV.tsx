@@ -153,6 +153,60 @@ const CV: React.FC = () => {
 
   const badges: Badge[] = [
     {
+      id: 'google_cloud',
+      name: t('badges.items.google_cloud.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13957857',
+      imageUrl: '/badges/google-cloud.svg',
+      issuer: t('badges.items.google_cloud.issuer'),
+      issueDate: '2024-02-01',
+      skills: t('badges.items.google_cloud.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'mlops',
+      name: t('badges.items.mlops.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12568746',
+      imageUrl: '/badges/mlops.svg',
+      issuer: t('badges.items.mlops.issuer'),
+      issueDate: '2024-03-01',
+      skills: t('badges.items.mlops.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'oracle_cloud',
+      name: t('badges.items.oracle_cloud.name'),
+      url: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=49A15607374E24FA7679A60B84772945389935111D718627D9E4CD0035F88FC8',
+      imageUrl: '/badges/oracle-cloud.svg',
+      issuer: t('badges.items.oracle_cloud.issuer'),
+      issueDate: '2024-04-01',
+      skills: t('badges.items.oracle_cloud.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'stem',
+      name: t('badges.items.stem.name'),
+      url: 'https://badgr.com/public/assertions/fgPvk8wpSnq5ePJwR8WerA',
+      imageUrl: '/badges/stem.svg',
+      issuer: t('badges.items.stem.issuer'),
+      issueDate: '2024-05-01',
+      skills: t('badges.items.stem.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'responsible_ai',
+      name: t('badges.items.responsible_ai.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13899903',
+      imageUrl: '/badges/responsible-ai.svg',
+      issuer: t('badges.items.responsible_ai.issuer'),
+      issueDate: '2024-06-01',
+      skills: t('badges.items.responsible_ai.skills', { returnObjects: true }) as string[]
+    },
+    {
+      id: 'prompt_design',
+      name: t('badges.items.prompt_design.name'),
+      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12560333',
+      imageUrl: '/badges/prompt-design.svg',
+      issuer: t('badges.items.prompt_design.issuer'),
+      issueDate: '2024-07-01',
+      skills: t('badges.items.prompt_design.skills', { returnObjects: true }) as string[]
+    },
+    {
       id: 'responsible_ai_privacy',
       name: t('badges.items.responsible_ai_privacy.name'),
       url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13899903',
@@ -187,60 +241,6 @@ const CV: React.FC = () => {
       issuer: t('badges.items.ibm_data.issuer'),
       issueDate: '2024-01-01',
       skills: t('badges.items.ibm_data.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'google_cloud',
-      name: t('badges.items.google_cloud.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
-      imageUrl: '/badges/google-cloud.svg',
-      issuer: t('badges.items.google_cloud.issuer'),
-      issueDate: '2024-02-01',
-      skills: t('badges.items.google_cloud.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'mlops',
-      name: t('badges.items.mlops.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
-      imageUrl: '/badges/mlops.svg',
-      issuer: t('badges.items.mlops.issuer'),
-      issueDate: '2024-03-01',
-      skills: t('badges.items.mlops.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'oracle_cloud',
-      name: t('badges.items.oracle_cloud.name'),
-      url: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=example',
-      imageUrl: '/badges/oracle-cloud.svg',
-      issuer: t('badges.items.oracle_cloud.issuer'),
-      issueDate: '2024-04-01',
-      skills: t('badges.items.oracle_cloud.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'stem',
-      name: t('badges.items.stem.name'),
-      url: 'https://example.com/badges/stem',
-      imageUrl: '/badges/stem.svg',
-      issuer: t('badges.items.stem.issuer'),
-      issueDate: '2024-05-01',
-      skills: t('badges.items.stem.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'responsible_ai',
-      name: t('badges.items.responsible_ai.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
-      imageUrl: '/badges/responsible-ai.svg',
-      issuer: t('badges.items.responsible_ai.issuer'),
-      issueDate: '2024-06-01',
-      skills: t('badges.items.responsible_ai.skills', { returnObjects: true }) as string[]
-    },
-    {
-      id: 'prompt_design',
-      name: t('badges.items.prompt_design.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
-      imageUrl: '/badges/prompt-design.svg',
-      issuer: t('badges.items.prompt_design.issuer'),
-      issueDate: '2024-07-01',
-      skills: t('badges.items.prompt_design.skills', { returnObjects: true }) as string[]
     }
   ];
 
